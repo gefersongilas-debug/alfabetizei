@@ -88,16 +88,31 @@
           <p>A estrutura já existe para que você possa concentrar seus esforços em gerir, desenvolver e escalar a sua unidade.</p></div>
         </article>
       </div>
-      <div class="differentials-action"><a class="btn btn-orange" href="#conhecer">Quero conhecer a estrutura</a></div>
+      <div class="differentials-action"><a class="btn btn-white contrast-cta" href="#conhecer">Quero conhecer a estrutura</a></div>
     </div>
   </section>
   <section class="units-section section-space" id="unidades" aria-labelledby="units-title">
-    <div class="container"><div class="section-heading center"><div class="eyebrow"><span class="eyebrow-dash"></span> MARCA EM OPERAÇÃO</div><h2 id="units-title">Uma franquia já estruturada no<br class="only-desktop"> mercado.</h2><p>Unidades reais ajudam a materializar a marca e mostram como a identidade Alfabetizei ganha forma no dia a dia.</p></div></div>
-    <div class="unit-gallery" aria-label="Fotos das unidades Alfabetizei">
-      <div class="unit-photo-pair"><img src="images/unidade-sala-rosa.webp" alt="Espaço de alfabetização com mesa e cadeiras coloridas" width="850" height="638" loading="lazy" decoding="async"><img src="images/unidade-recepcao.webp" alt="Ambiente interno da unidade" width="850" height="638" loading="lazy" decoding="async"></div>
-      <div class="unit-photo-pair"><img src="images/unidade-sala-verde.webp" alt="Sala de atendimento da unidade Alfabetizei" width="850" height="638" loading="lazy" decoding="async"><img src="images/unidade-recepcao.webp" alt="Espaço com materiais da Alfabetizei" width="850" height="638" loading="lazy" decoding="async"></div>
-      <div class="unit-photo-pair"><img src="images/unidade-interior.webp" alt="Interior da unidade com materiais educativos" width="850" height="638" loading="lazy" decoding="async"><img src="images/jogos-educativos.webp" alt="Atendimento com materiais educativos" width="900" height="675" loading="lazy" decoding="async"></div>
+    <div class="container">
+      <div class="section-heading center"><div class="eyebrow"><span class="eyebrow-dash"></span> MARCA EM OPERAÇÃO</div><h2 id="units-title">Uma franquia já estruturada no<br class="only-desktop"> mercado.</h2><p>Unidades reais ajudam a materializar a marca e mostram como a identidade Alfabetizei ganha forma no dia a dia.</p></div>
     </div>
+    <div class="units-carousel" data-carousel aria-roledescription="carrossel" aria-label="Fotos das unidades Alfabetizei">
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Ver fotos anteriores">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="units-carousel-viewport">
+          <div class="units-carousel-track">
+            <article class="unit-slide"><img src="images/unidade-carousel-01.webp" alt="Sala rosa da Alfabetizei com mesa infantil colorida" width="578" height="578" loading="lazy" decoding="async"></article>
+            <article class="unit-slide"><img src="images/unidade-carousel-02.webp" alt="Sala verde de atividades com mesa branca e cadeiras coloridas" width="578" height="578" loading="lazy" decoding="async"></article>
+            <article class="unit-slide"><img src="images/unidade-carousel-03.webp" alt="Espaço de materiais didáticos e recepção da unidade Alfabetizei" width="578" height="578" loading="lazy" decoding="async"></article>
+            <article class="unit-slide"><img src="images/unidade-carousel-04.webp" alt="Recepção rosa da Alfabetizei com mesa de atendimento" width="578" height="578" loading="lazy" decoding="async"></article>
+            <article class="unit-slide"><img src="images/unidade-carousel-05.webp" alt="Sala de aula infantil com mesas pequenas e tatame colorido" width="578" height="578" loading="lazy" decoding="async"></article>
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Ver próximas fotos">
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+    <div class="carousel-dots" aria-label="Navegação do carrossel"></div>
   </section>
   <section class="faq-section section-space" id="perguntas" aria-labelledby="faq-title">
     <div class="container">
@@ -120,20 +135,29 @@
     <div class="contact-copy"><div class="eyebrow"><span class="eyebrow-dash"></span> PRÓXIMO PASSO</div><h2 id="contact-title">Quero saber mais<br> sobre a franquia<br> Alfabetizei.</h2><p>Preencha os dados abaixo. As respostas ajudam o time de expansão a entender seu perfil, capacidade de investimento e prazo para abertura antes da conversa comercial.</p></div>
     <div class="form-card">
       <form id="lead-form" novalidate>
-        <div class="field-grid">
-          <label class="form-field"><span>Nome completo</span><input type="text" name="nome" placeholder="Seu nome" autocomplete="name" maxlength="160" required></label>
-          <label class="form-field"><span>E-mail</span><input type="email" name="email" placeholder="voce@email.com" autocomplete="email" maxlength="200" required></label>
-          <label class="form-field"><span>Telefone / WhatsApp</span><input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" autocomplete="tel" inputmode="tel" maxlength="16" minlength="14" required></label>
-          <label class="form-field"><span>Cidade / UF de interesse</span><input type="text" name="cidade_uf" placeholder="Ex.: Campinas / SP" maxlength="120" required></label>
+        <div class="form-progress" aria-label="Progresso do formulário">
+          <div class="form-progress-top"><span id="form-step-label" aria-live="polite">Etapa 1 de 2</span><span id="form-step-name">Seus dados</span></div>
+          <div class="form-progress-track"><span class="form-progress-fill" id="form-progress-fill"></span></div>
         </div>
-        <label class="form-field"><span>Qual é o seu perfil profissional?</span><select name="perfil_profissional" required><option value="" selected disabled>Selecione</option><option>Profissionais liberais</option><option>Investidores</option><option>Executivos</option><option>Educadores</option><option>Outro perfil</option></select></label>
-        <label class="form-field"><span>Quanto você tem disponível para investir?</span><select name="investimento" required><option value="" selected disabled>Selecione</option><option>Menos de R$ 60 mil</option><option>R$ 60 mil a R$ 80 mil</option><option>Mais de R$ 80 mil</option><option>Prefiro conversar com a equipe</option></select></label>
-        <label class="form-field"><span>Em quanto tempo pretende abrir uma unidade?</span><select name="prazo_abertura" required><option value="" selected disabled>Selecione</option><option>O quanto antes</option><option>Em até 3 meses</option><option>Entre 3 e 6 meses</option><option>Em mais de 6 meses</option><option>Ainda estou pesquisando</option></select></label>
-        <label class="form-field"><span>Como pretende atuar na unidade?</span><select name="atuacao" required><option value="" selected disabled>Selecione</option><option>Gestão direta da unidade</option><option>Gestão com apoio de uma equipe</option><option>Ainda estou avaliando</option></select></label>
-        <label class="form-field"><span>Você já possui outro negócio?</span><select name="outro_negocio" required><option value="" selected disabled>Selecione</option><option>Sim</option><option>Não</option></select></label>
+        <div class="form-step" data-form-step="1">
+          <div class="field-grid">
+            <label class="form-field"><span>Nome completo</span><input type="text" name="nome" placeholder="Seu nome" autocomplete="name" maxlength="160" required></label>
+            <label class="form-field"><span>E-mail</span><input type="email" name="email" placeholder="voce@email.com" autocomplete="email" maxlength="200" required></label>
+            <label class="form-field"><span>Telefone / WhatsApp</span><input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" autocomplete="tel" inputmode="tel" maxlength="16" minlength="14" required></label>
+            <label class="form-field"><span>Cidade / UF de interesse</span><input type="text" name="cidade_uf" placeholder="Ex.: Campinas / SP" maxlength="120" required></label>
+          </div>
+          <button type="button" class="btn btn-orange btn-submit btn-next" id="form-next">Continuar <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="form-step" data-form-step="2" hidden>
+          <label class="form-field"><span>Qual é o seu perfil profissional?</span><select name="perfil_profissional" required><option value="" selected disabled>Selecione</option><option>Profissionais liberais</option><option>Investidores</option><option>Executivos</option><option>Educadores</option><option>Outro perfil</option></select></label>
+          <label class="form-field"><span>Quanto você tem disponível para investir?</span><select name="investimento" required><option value="" selected disabled>Selecione</option><option>Menos de R$ 60 mil</option><option>R$ 60 mil a R$ 80 mil</option><option>Mais de R$ 80 mil</option><option>Prefiro conversar com a equipe</option></select></label>
+          <label class="form-field"><span>Em quanto tempo pretende abrir uma unidade?</span><select name="prazo_abertura" required><option value="" selected disabled>Selecione</option><option>O quanto antes</option><option>Em até 3 meses</option><option>Entre 3 e 6 meses</option><option>Em mais de 6 meses</option><option>Ainda estou pesquisando</option></select></label>
+          <label class="form-field"><span>Como pretende atuar na unidade?</span><select name="atuacao" required><option value="" selected disabled>Selecione</option><option>Gestão direta da unidade</option><option>Gestão com apoio de uma equipe</option><option>Ainda estou avaliando</option></select></label>
+          <label class="form-field"><span>Você já possui outro negócio?</span><select name="outro_negocio" required><option value="" selected disabled>Selecione</option><option>Sim</option><option>Não</option></select></label>
+          <div class="form-actions"><button type="button" class="btn btn-white btn-back" id="form-back"><span aria-hidden="true">←</span> Voltar</button><button type="submit" class="btn btn-orange btn-submit">Quero receber a apresentação da franquia</button></div>
+          <p class="form-disclaimer">Formulário preparado para integração com a RD Station. O envio real dos dados deve ser conectado pela equipe responsável pela publicação.</p>
+        </div>
         <input type="hidden" name="page_url" id="page_url"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="utm_term" id="utm_term">
-        <button type="submit" class="btn btn-orange btn-submit">Quero receber a apresentação da franquia</button>
-        <p class="form-disclaimer">Formulário preparado para integração com a RD Station. O envio real dos dados deve ser conectado pela equipe responsável pela publicação.</p>
         <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
       </form>
     </div>
