@@ -154,3 +154,9 @@ p{color:var(--slate)}
   /* A faixa ainda precisa da transformação de posição para navegar sem movimento. */
   .units-carousel-track{transition:none!important}
 }
+
+/* Feedback de envio ao Make sem alterar o layout original. */
+.form-status[data-state="success"]{background:#eaf7ec;color:#20643a;border:1px solid #b4ddbd;font-weight:700}
+.form-status[data-state="error"]{background:#fff1ea;color:#9e3f22;border:1px solid #f2c1ab}
+#lead-form button[type="submit"][disabled]{opacity:.68;cursor:wait;pointer-events:none}
+.form-progress[hidden]{display:none!important}
