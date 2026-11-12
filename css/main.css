@@ -160,3 +160,40 @@ p{color:var(--slate)}
 .form-status[data-state="error"]{background:#fff1ea;color:#9e3f22;border:1px solid #f2c1ab}
 #lead-form button[type="submit"][disabled]{opacity:.68;cursor:wait;pointer-events:none}
 .form-progress[hidden]{display:none!important}
+
+
+/* v09 — Ajustes comerciais e visuais aprovados */
+.number-card .investment-value,.number-card .royalties-value{font-size:clamp(18px,1.8vw,28px);white-space:normal;line-height:1.23;letter-spacing:-.035em;overflow-wrap:normal}
+.number-card .royalties-value{font-size:clamp(19px,1.86vw,29px)}
+.math-announcement{position:relative;isolation:isolate;display:flex;align-items:center;gap:19px;max-width:100%;margin-top:23px;padding:18px 30px 18px 23px;border:1px solid #ffe4a1;border-radius:22px;background:linear-gradient(110deg,#fffdf4 0%,#ffeab8 55%,#ffd57a 100%);box-shadow:0 14px 35px #071b2d24;overflow:hidden}
+.math-announcement-icon{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;align-items:center;justify-items:center;width:76px;height:76px;padding:12px;flex:none;background:#fff;border:2px solid #f7ba38;border-radius:20px;box-shadow:0 5px 16px #e4a21a2b;color:#e38700;font-size:22px;line-height:1;font-weight:900;transform:rotate(-5deg)}
+.math-announcement-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
+.math-announcement-kicker{color:#815007;font-size:11px;font-weight:900;letter-spacing:.14em}
+.math-announcement-copy strong{color:#102b45;font-size:clamp(24px,2.45vw,37px);line-height:1.13;font-weight:900;letter-spacing:-.04em}
+.math-announcement-copy strong span{color:#e28700}
+.math-announcement-stars{position:absolute;right:28px;top:8px;color:#fff;font-size:86px;line-height:1;opacity:.7;pointer-events:none}
+.differential-image.materials-gallery{display:grid;grid-template-columns:.95fr 1.05fr;align-items:stretch;height:290px;background:#fff9ed;overflow:hidden}
+.materials-gallery .materials-book{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;background:linear-gradient(160deg,#fffef8,#fff0d5)}
+.materials-gallery .materials-book img{display:block;width:100%;height:100%;padding:9px 0;object-fit:contain;transform:scale(1.13)}
+.materials-gallery .materials-game{min-width:0;overflow:hidden}
+.materials-gallery .materials-game img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.differential-card.accent-orange h3{line-height:1.18;max-width:440px}
+.units-section .section-heading h2,.faq-section .section-heading h2{font-size:clamp(38px,3.65vw,62px);line-height:1.13;max-width:1030px;margin-left:auto;margin-right:auto}
+.units-section .section-heading{margin-bottom:47px}
+.faq-section .section-heading{margin-bottom:43px}
+@media(max-width:1400px){.differential-image.materials-gallery{height:248px}}
+@media(max-width:1024px){.differential-image.materials-gallery{height:210px}}
+@media(max-width:900px){.differential-image.materials-gallery{height:240px}}
+@media(max-width:700px){
+ .number-card .investment-value,.number-card .royalties-value{font-size:clamp(17px,4.6vw,23px);line-height:1.25}
+ .math-announcement{gap:12px;padding:16px;border-radius:18px}
+ .math-announcement-icon{width:56px;height:56px;border-radius:15px;font-size:17px;padding:8px}
+ .math-announcement-kicker{font-size:9px;letter-spacing:.08em}
+ .math-announcement-copy strong{font-size:clamp(21px,5.4vw,28px)}
+ .math-announcement-stars{right:8px;top:-2px;font-size:48px;opacity:.27}
+ .differential-image.materials-gallery{height:260px}
+ .units-section .section-heading h2,.faq-section .section-heading h2{font-size:clamp(31px,7.5vw,43px);line-height:1.15}
+ .units-section .section-heading,.faq-section .section-heading{margin-bottom:35px}
+}
+@media(max-width:430px){.differential-image.materials-gallery{height:230px}.math-announcement-copy strong{font-size:22px}}
+@media(max-width:360px){.math-announcement-icon{width:50px;height:50px}.math-announcement-copy strong{font-size:19px}}
